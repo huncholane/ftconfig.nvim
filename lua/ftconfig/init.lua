@@ -1,7 +1,6 @@
 local M = {}
-
-M.ftdir = vim.fn.stdpath("config") .. "/lua/ftconfig"
 M.filetypes = {}
+M.ftdir = vim.fn.stdpath("config") .. "/lua/ftconfig"
 
 if vim.fn.isdirectory(M.ftdir) == 0 then
 	vim.fn.mkdir(M.ftdir, "p")
