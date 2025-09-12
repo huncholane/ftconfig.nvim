@@ -49,7 +49,7 @@ local function filetype_picker(opts)
 					actions.close(prompt_bufnr)
 					local selection = action_state.get_selected_entry()
 					if selection then
-						require("ftconfig").edit_filetype(selection[1]:sub(3, -1))
+						require("ftconfig").edit_filetype(selection.value)
 					end
 				end)
 				return true
