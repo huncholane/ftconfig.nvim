@@ -10,7 +10,7 @@ local augroup = vim.api.nvim_create_augroup("ftconfig", { clear = true })
 
 ---@class FTConformSpec
 ---@field use string[]
----@field formatters? conform.FileFormatterConfig[]
+---@field formatters? table<string, conform.FileFormatterConfig>
 
 ---@class FTSpec
 ---@field indent? integer
@@ -23,11 +23,8 @@ function M.load_file(filename)
 	local ft = vim.fn.fnamemodify(filename, ":r")
 	table.insert(M.filetypes, ft)
 	local mod = "ftconfig." .. ft
-	local ok, spec = pcall(require, mod)
-	if not ok then
-		return
-	end
-	---@cast spec FTSpec?
+	---@type FTSpec?
+	local spec = require(mod)
 	if not spec then
 		return
 	end
