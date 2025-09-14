@@ -1,362 +1,362 @@
----@alias LSPName
----| "ada_ls"
----| "agda_ls"
----| "aiken"
----| "air"
----| "alloy_ls"
----| "anakin_language_server"
----| "angularls"
----| "ansiblels"
----| "antlersls"
----| "apex_ls"
----| "arduino_language_server"
----| "asm_lsp"
----| "ast_grep"
----| "astro"
----| "atlas"
----| "autohotkey_lsp"
----| "autotools_ls"
----| "awk_ls"
----| "azure_pipelines_ls"
----| "bacon_ls"
----| "ballerina"
----| "basedpyright"
----| "bashls"
----| "basics_ls"
----| "bazelrc_lsp"
----| "beancount"
----| "bicep"
----| "biome"
----| "bitbake_language_server"
----| "bitbake_ls"
----| "blueprint_ls"
----| "bqls"
----| "bqnlsp"
----| "bright_script"
----| "bsl_ls"
----| "buck2"
----| "buddy_ls"
----| "buf_ls"
----| "bufls"
----| "bzl"
----| "c3_lsp"
----| "cadence"
----| "cairo_ls"
----| "ccls"
----| "cds_lsp"
----| "circom"
----| "clangd"
----| "clarity_lsp"
----| "clojure_lsp"
----| "cmake"
----| "cobol_ls"
----| "codeqlls"
----| "coffeesense"
----| "contextive"
----| "coq_lsp"
----| "crystalline"
----| "csharp_ls"
----| "css_variables"
----| "cssls"
----| "cssmodules_ls"
----| "cucumber_language_server"
----| "cue"
----| "custom_elements_ls"
----| "cypher_ls"
----| "daedalus_ls"
----| "dafny"
----| "dagger"
----| "dartls"
----| "dcmls"
----| "debputy"
----| "delphi_ls"
----| "denols"
----| "dhall_lsp_server"
----| "diagnosticls"
----| "digestif"
----| "djlsp"
----| "docker_compose_language_service"
----| "dockerls"
----| "dolmenls"
----| "dotls"
----| "dprint"
----| "drools_lsp"
----| "ds_pinyin_lsp"
----| "dts_lsp"
----| "earthlyls"
----| "ecsact"
----| "efm"
----| "elixirls"
----| "elmls"
----| "elp"
----| "ember"
----| "emmet_language_server"
----| "emmet_ls"
----| "erg_language_server"
----| "erlangls"
----| "esbonio"
----| "eslint"
----| "facility_language_server"
----| "fennel_language_server"
----| "fennel_ls"
----| "fish_lsp"
----| "flow"
----| "flux_lsp"
----| "foam_ls"
----| "fortls"
----| "fsautocomplete"
----| "fsharp_language_server"
----| "fstar"
----| "futhark_lsp"
----| "gdscript"
----| "gdshader_lsp"
----| "gh_actions_ls"
----| "ghcide"
----| "ghdl_ls"
----| "ginko_ls"
----| "gitlab_ci_ls"
----| "glasgow"
----| "gleam"
----| "glint"
----| "glsl_analyzer"
----| "glslls"
----| "golangci_lint_ls"
----| "gopls"
----| "gradle_ls"
----| "grammarly"
----| "graphql"
----| "groovyls"
----| "guile_ls"
----| "harper_ls"
----| "haxe_language_server"
----| "hdl_checker"
----| "helm_ls"
----| "hhvm"
----| "hie"
----| "hlasm"
----| "hls"
----| "hoon_ls"
----| "html"
----| "htmx"
----| "hydra_lsp"
----| "hyprls"
----| "idris2_lsp"
----| "intelephense"
----| "janet_lsp"
----| "java_language_server"
----| "jdtls"
----| "jedi_language_server"
----| "jinja_lsp"
----| "jqls"
----| "jsonls"
----| "jsonnet_ls"
----| "julials"
----| "just"
----| "kcl"
----| "koka"
----| "kotlin_language_server"
----| "kulala_ls"
----| "laravel_ls"
----| "lean3ls"
----| "leanls"
----| "lelwel_ls"
----| "lemminx"
----| "lexical"
----| "lsp_ai"
----| "ltex"
----| "ltex_plus"
----| "lua_ls"
----| "luau_lsp"
----| "lwc_ls"
----| "m68k"
----| "markdown_oxide"
----| "marko"
----| "marksman"
----| "matlab_ls"
----| "mdx_analyzer"
----| "mesonlsp"
----| "metals"
----| "millet"
----| "mint"
----| "mlir_lsp_server"
----| "mlir_pdll_lsp_server"
----| "mm0_ls"
----| "mojo"
----| "motoko_lsp"
----| "move_analyzer"
----| "msbuild_project_tools_server"
----| "muon"
----| "mutt_ls"
----| "nelua_lsp"
----| "neocmake"
----| "nextflow_ls"
----| "nextls"
----| "nginx_language_server"
----| "nickel_ls"
----| "nil_ls"
----| "nim_langserver"
----| "nimls"
----| "nixd"
----| "nomad_lsp"
----| "ntt"
----| "nushell"
----| "nxls"
----| "ocamlls"
----| "ocamllsp"
----| "ols"
----| "omnisharp"
----| "opencl_ls"
----| "openedge_ls"
----| "openscad_ls"
----| "openscad_lsp"
----| "oxlint"
----| "pact_ls"
----| "pasls"
----| "pbls"
----| "perlls"
----| "perlnavigator"
----| "perlpls"
----| "pest_ls"
----| "phan"
----| "phpactor"
----| "pico8_ls"
----| "pkgbuild_language_server"
----| "please"
----| "poryscript_pls"
----| "postgres_lsp"
----| "powershell_es"
----| "prismals"
----| "prolog_ls"
----| "prosemd_lsp"
----| "protols"
----| "psalm"
----| "pug"
----| "puppet"
----| "purescriptls"
----| "pylsp"
----| "pylyzer"
----| "pyre"
----| "pyright"
----| "qmlls"
----| "quick_lint_js"
----| "r_language_server"
----| "racket_langserver"
----| "raku_navigator"
----| "reason_ls"
----| "regal"
----| "regols"
----| "relay_lsp"
----| "remark_ls"
----| "rescriptls"
----| "rls"
----| "rnix"
----| "robotcode"
----| "robotframework_ls"
----| "roc_ls"
----| "rome"
----| "rpmspec"
----| "rubocop"
----| "ruby_lsp"
----| "ruff"
----| "ruff_lsp"
----| "rune_languageserver"
----| "rust_analyzer"
----| "salt_ls"
----| "scheme_langserver"
----| "scry"
----| "selene3p_ls"
----| "serve_d"
----| "shopify_theme_ls"
----| "sixtyfps"
----| "slangd"
----| "slint_lsp"
----| "smarty_ls"
----| "smithy_ls"
----| "snakeskin_ls"
----| "snyk_ls"
----| "solang"
----| "solargraph"
----| "solc"
----| "solidity"
----| "solidity_ls"
----| "solidity_ls_nomicfoundation"
----| "somesass_ls"
----| "sorbet"
----| "sourcekit"
----| "sourcery"
----| "spectral"
----| "spyglassmc_language_server"
----| "sqlls"
----| "sqls"
----| "standardrb"
----| "starlark_rust"
----| "starpls"
----| "statix"
----| "steep"
----| "stimulus_ls"
----| "stylelint_lsp"
----| "stylua3p_ls"
----| "superhtml"
----| "svelte"
----| "svlangserver"
----| "svls"
----| "swift_mesonls"
----| "syntax_tree"
----| "systemd_ls"
----| "tabby_ml"
----| "tailwindcss"
----| "taplo"
----| "tblgen_lsp_server"
----| "teal_ls"
----| "templ"
----| "terraform_lsp"
----| "terraformls"
----| "texlab"
----| "textlsp"
----| "tflint"
----| "theme_check"
----| "thriftls"
----| "tilt_ls"
----| "tinymist"
----| "ts_ls"
----| "ts_query_ls"
----| "tsp_server"
----| "ttags"
----| "turbo_ls"
----| "turtle_ls"
----| "tvm_ffi_navigator"
----| "twiggy_language_server"
----| "typeprof"
----| "typos_lsp"
----| "typst_lsp"
----| "uiua"
----| "ungrammar_languageserver"
----| "unison"
----| "unocss"
----| "uvls"
----| "v_analyzer"
----| "vacuum"
----| "vala_ls"
----| "vale_ls"
----| "vdmj"
----| "vectorcode_server"
----| "verible"
----| "veridian"
----| "veryl_ls"
----| "vhdl_ls"
----| "vimls"
----| "visualforce_ls"
----| "vls"
----| "volar"
----| "vscoqtop"
----| "vtsls"
----| "vuels"
----| "wasm_language_tools"
----| "wgsl_analyzer"
----| "yamlls"
----| "yang_lsp"
----| "yls"
----| "ziggy"
----| "ziggy_schema"
----| "zk"
----| "zls"
+---@class ft.LSPConf
+---@field ada_ls? vim.lsp.Config
+---@field agda_ls? vim.lsp.Config
+---@field aiken? vim.lsp.Config
+---@field air? vim.lsp.Config
+---@field alloy_ls? vim.lsp.Config
+---@field anakin_language_server? vim.lsp.Config
+---@field angularls? vim.lsp.Config
+---@field ansiblels? vim.lsp.Config
+---@field antlersls? vim.lsp.Config
+---@field apex_ls? vim.lsp.Config
+---@field arduino_language_server? vim.lsp.Config
+---@field asm_lsp? vim.lsp.Config
+---@field ast_grep? vim.lsp.Config
+---@field astro? vim.lsp.Config
+---@field atlas? vim.lsp.Config
+---@field autohotkey_lsp? vim.lsp.Config
+---@field autotools_ls? vim.lsp.Config
+---@field awk_ls? vim.lsp.Config
+---@field azure_pipelines_ls? vim.lsp.Config
+---@field bacon_ls? vim.lsp.Config
+---@field ballerina? vim.lsp.Config
+---@field basedpyright? vim.lsp.Config
+---@field bashls? vim.lsp.Config
+---@field basics_ls? vim.lsp.Config
+---@field bazelrc_lsp? vim.lsp.Config
+---@field beancount? vim.lsp.Config
+---@field bicep? vim.lsp.Config
+---@field biome? vim.lsp.Config
+---@field bitbake_language_server? vim.lsp.Config
+---@field bitbake_ls? vim.lsp.Config
+---@field blueprint_ls? vim.lsp.Config
+---@field bqls? vim.lsp.Config
+---@field bqnlsp? vim.lsp.Config
+---@field bright_script? vim.lsp.Config
+---@field bsl_ls? vim.lsp.Config
+---@field buck2? vim.lsp.Config
+---@field buddy_ls? vim.lsp.Config
+---@field buf_ls? vim.lsp.Config
+---@field bufls? vim.lsp.Config
+---@field bzl? vim.lsp.Config
+---@field c3_lsp? vim.lsp.Config
+---@field cadence? vim.lsp.Config
+---@field cairo_ls? vim.lsp.Config
+---@field ccls? vim.lsp.Config
+---@field cds_lsp? vim.lsp.Config
+---@field circom? vim.lsp.Config
+---@field clangd? vim.lsp.Config
+---@field clarity_lsp? vim.lsp.Config
+---@field clojure_lsp? vim.lsp.Config
+---@field cmake? vim.lsp.Config
+---@field cobol_ls? vim.lsp.Config
+---@field codeqlls? vim.lsp.Config
+---@field coffeesense? vim.lsp.Config
+---@field contextive? vim.lsp.Config
+---@field coq_lsp? vim.lsp.Config
+---@field crystalline? vim.lsp.Config
+---@field csharp_ls? vim.lsp.Config
+---@field css_variables? vim.lsp.Config
+---@field cssls? vim.lsp.Config
+---@field cssmodules_ls? vim.lsp.Config
+---@field cucumber_language_server? vim.lsp.Config
+---@field cue? vim.lsp.Config
+---@field custom_elements_ls? vim.lsp.Config
+---@field cypher_ls? vim.lsp.Config
+---@field daedalus_ls? vim.lsp.Config
+---@field dafny? vim.lsp.Config
+---@field dagger? vim.lsp.Config
+---@field dartls? vim.lsp.Config
+---@field dcmls? vim.lsp.Config
+---@field debputy? vim.lsp.Config
+---@field delphi_ls? vim.lsp.Config
+---@field denols? vim.lsp.Config
+---@field dhall_lsp_server? vim.lsp.Config
+---@field diagnosticls? vim.lsp.Config
+---@field digestif? vim.lsp.Config
+---@field djlsp? vim.lsp.Config
+---@field docker_compose_language_service? vim.lsp.Config
+---@field dockerls? vim.lsp.Config
+---@field dolmenls? vim.lsp.Config
+---@field dotls? vim.lsp.Config
+---@field dprint? vim.lsp.Config
+---@field drools_lsp? vim.lsp.Config
+---@field ds_pinyin_lsp? vim.lsp.Config
+---@field dts_lsp? vim.lsp.Config
+---@field earthlyls? vim.lsp.Config
+---@field ecsact? vim.lsp.Config
+---@field efm? vim.lsp.Config
+---@field elixirls? vim.lsp.Config
+---@field elmls? vim.lsp.Config
+---@field elp? vim.lsp.Config
+---@field ember? vim.lsp.Config
+---@field emmet_language_server? vim.lsp.Config
+---@field emmet_ls? vim.lsp.Config
+---@field erg_language_server? vim.lsp.Config
+---@field erlangls? vim.lsp.Config
+---@field esbonio? vim.lsp.Config
+---@field eslint? vim.lsp.Config
+---@field facility_language_server? vim.lsp.Config
+---@field fennel_language_server? vim.lsp.Config
+---@field fennel_ls? vim.lsp.Config
+---@field fish_lsp? vim.lsp.Config
+---@field flow? vim.lsp.Config
+---@field flux_lsp? vim.lsp.Config
+---@field foam_ls? vim.lsp.Config
+---@field fortls? vim.lsp.Config
+---@field fsautocomplete? vim.lsp.Config
+---@field fsharp_language_server? vim.lsp.Config
+---@field fstar? vim.lsp.Config
+---@field futhark_lsp? vim.lsp.Config
+---@field gdscript? vim.lsp.Config
+---@field gdshader_lsp? vim.lsp.Config
+---@field gh_actions_ls? vim.lsp.Config
+---@field ghcide? vim.lsp.Config
+---@field ghdl_ls? vim.lsp.Config
+---@field ginko_ls? vim.lsp.Config
+---@field gitlab_ci_ls? vim.lsp.Config
+---@field glasgow? vim.lsp.Config
+---@field gleam? vim.lsp.Config
+---@field glint? vim.lsp.Config
+---@field glsl_analyzer? vim.lsp.Config
+---@field glslls? vim.lsp.Config
+---@field golangci_lint_ls? vim.lsp.Config
+---@field gopls? vim.lsp.Config
+---@field gradle_ls? vim.lsp.Config
+---@field grammarly? vim.lsp.Config
+---@field graphql? vim.lsp.Config
+---@field groovyls? vim.lsp.Config
+---@field guile_ls? vim.lsp.Config
+---@field harper_ls? vim.lsp.Config
+---@field haxe_language_server? vim.lsp.Config
+---@field hdl_checker? vim.lsp.Config
+---@field helm_ls? vim.lsp.Config
+---@field hhvm? vim.lsp.Config
+---@field hie? vim.lsp.Config
+---@field hlasm? vim.lsp.Config
+---@field hls? vim.lsp.Config
+---@field hoon_ls? vim.lsp.Config
+---@field html? vim.lsp.Config
+---@field htmx? vim.lsp.Config
+---@field hydra_lsp? vim.lsp.Config
+---@field hyprls? vim.lsp.Config
+---@field idris2_lsp? vim.lsp.Config
+---@field intelephense? vim.lsp.Config
+---@field janet_lsp? vim.lsp.Config
+---@field java_language_server? vim.lsp.Config
+---@field jdtls? vim.lsp.Config
+---@field jedi_language_server? vim.lsp.Config
+---@field jinja_lsp? vim.lsp.Config
+---@field jqls? vim.lsp.Config
+---@field jsonls? vim.lsp.Config
+---@field jsonnet_ls? vim.lsp.Config
+---@field julials? vim.lsp.Config
+---@field just? vim.lsp.Config
+---@field kcl? vim.lsp.Config
+---@field koka? vim.lsp.Config
+---@field kotlin_language_server? vim.lsp.Config
+---@field kulala_ls? vim.lsp.Config
+---@field laravel_ls? vim.lsp.Config
+---@field lean3ls? vim.lsp.Config
+---@field leanls? vim.lsp.Config
+---@field lelwel_ls? vim.lsp.Config
+---@field lemminx? vim.lsp.Config
+---@field lexical? vim.lsp.Config
+---@field lsp_ai? vim.lsp.Config
+---@field ltex? vim.lsp.Config
+---@field ltex_plus? vim.lsp.Config
+---@field lua_ls? vim.lsp.Config
+---@field luau_lsp? vim.lsp.Config
+---@field lwc_ls? vim.lsp.Config
+---@field m68k? vim.lsp.Config
+---@field markdown_oxide? vim.lsp.Config
+---@field marko? vim.lsp.Config
+---@field marksman? vim.lsp.Config
+---@field matlab_ls? vim.lsp.Config
+---@field mdx_analyzer? vim.lsp.Config
+---@field mesonlsp? vim.lsp.Config
+---@field metals? vim.lsp.Config
+---@field millet? vim.lsp.Config
+---@field mint? vim.lsp.Config
+---@field mlir_lsp_server? vim.lsp.Config
+---@field mlir_pdll_lsp_server? vim.lsp.Config
+---@field mm0_ls? vim.lsp.Config
+---@field mojo? vim.lsp.Config
+---@field motoko_lsp? vim.lsp.Config
+---@field move_analyzer? vim.lsp.Config
+---@field msbuild_project_tools_server? vim.lsp.Config
+---@field muon? vim.lsp.Config
+---@field mutt_ls? vim.lsp.Config
+---@field nelua_lsp? vim.lsp.Config
+---@field neocmake? vim.lsp.Config
+---@field nextflow_ls? vim.lsp.Config
+---@field nextls? vim.lsp.Config
+---@field nginx_language_server? vim.lsp.Config
+---@field nickel_ls? vim.lsp.Config
+---@field nil_ls? vim.lsp.Config
+---@field nim_langserver? vim.lsp.Config
+---@field nimls? vim.lsp.Config
+---@field nixd? vim.lsp.Config
+---@field nomad_lsp? vim.lsp.Config
+---@field ntt? vim.lsp.Config
+---@field nushell? vim.lsp.Config
+---@field nxls? vim.lsp.Config
+---@field ocamlls? vim.lsp.Config
+---@field ocamllsp? vim.lsp.Config
+---@field ols? vim.lsp.Config
+---@field omnisharp? vim.lsp.Config
+---@field opencl_ls? vim.lsp.Config
+---@field openedge_ls? vim.lsp.Config
+---@field openscad_ls? vim.lsp.Config
+---@field openscad_lsp? vim.lsp.Config
+---@field oxlint? vim.lsp.Config
+---@field pact_ls? vim.lsp.Config
+---@field pasls? vim.lsp.Config
+---@field pbls? vim.lsp.Config
+---@field perlls? vim.lsp.Config
+---@field perlnavigator? vim.lsp.Config
+---@field perlpls? vim.lsp.Config
+---@field pest_ls? vim.lsp.Config
+---@field phan? vim.lsp.Config
+---@field phpactor? vim.lsp.Config
+---@field pico8_ls? vim.lsp.Config
+---@field pkgbuild_language_server? vim.lsp.Config
+---@field please? vim.lsp.Config
+---@field poryscript_pls? vim.lsp.Config
+---@field postgres_lsp? vim.lsp.Config
+---@field powershell_es? vim.lsp.Config
+---@field prismals? vim.lsp.Config
+---@field prolog_ls? vim.lsp.Config
+---@field prosemd_lsp? vim.lsp.Config
+---@field protols? vim.lsp.Config
+---@field psalm? vim.lsp.Config
+---@field pug? vim.lsp.Config
+---@field puppet? vim.lsp.Config
+---@field purescriptls? vim.lsp.Config
+---@field pylsp? vim.lsp.Config
+---@field pylyzer? vim.lsp.Config
+---@field pyre? vim.lsp.Config
+---@field pyright? vim.lsp.Config
+---@field qmlls? vim.lsp.Config
+---@field quick_lint_js? vim.lsp.Config
+---@field r_language_server? vim.lsp.Config
+---@field racket_langserver? vim.lsp.Config
+---@field raku_navigator? vim.lsp.Config
+---@field reason_ls? vim.lsp.Config
+---@field regal? vim.lsp.Config
+---@field regols? vim.lsp.Config
+---@field relay_lsp? vim.lsp.Config
+---@field remark_ls? vim.lsp.Config
+---@field rescriptls? vim.lsp.Config
+---@field rls? vim.lsp.Config
+---@field rnix? vim.lsp.Config
+---@field robotcode? vim.lsp.Config
+---@field robotframework_ls? vim.lsp.Config
+---@field roc_ls? vim.lsp.Config
+---@field rome? vim.lsp.Config
+---@field rpmspec? vim.lsp.Config
+---@field rubocop? vim.lsp.Config
+---@field ruby_lsp? vim.lsp.Config
+---@field ruff? vim.lsp.Config
+---@field ruff_lsp? vim.lsp.Config
+---@field rune_languageserver? vim.lsp.Config
+---@field rust_analyzer? vim.lsp.Config
+---@field salt_ls? vim.lsp.Config
+---@field scheme_langserver? vim.lsp.Config
+---@field scry? vim.lsp.Config
+---@field selene3p_ls? vim.lsp.Config
+---@field serve_d? vim.lsp.Config
+---@field shopify_theme_ls? vim.lsp.Config
+---@field sixtyfps? vim.lsp.Config
+---@field slangd? vim.lsp.Config
+---@field slint_lsp? vim.lsp.Config
+---@field smarty_ls? vim.lsp.Config
+---@field smithy_ls? vim.lsp.Config
+---@field snakeskin_ls? vim.lsp.Config
+---@field snyk_ls? vim.lsp.Config
+---@field solang? vim.lsp.Config
+---@field solargraph? vim.lsp.Config
+---@field solc? vim.lsp.Config
+---@field solidity? vim.lsp.Config
+---@field solidity_ls? vim.lsp.Config
+---@field solidity_ls_nomicfoundation? vim.lsp.Config
+---@field somesass_ls? vim.lsp.Config
+---@field sorbet? vim.lsp.Config
+---@field sourcekit? vim.lsp.Config
+---@field sourcery? vim.lsp.Config
+---@field spectral? vim.lsp.Config
+---@field spyglassmc_language_server? vim.lsp.Config
+---@field sqlls? vim.lsp.Config
+---@field sqls? vim.lsp.Config
+---@field standardrb? vim.lsp.Config
+---@field starlark_rust? vim.lsp.Config
+---@field starpls? vim.lsp.Config
+---@field statix? vim.lsp.Config
+---@field steep? vim.lsp.Config
+---@field stimulus_ls? vim.lsp.Config
+---@field stylelint_lsp? vim.lsp.Config
+---@field stylua3p_ls? vim.lsp.Config
+---@field superhtml? vim.lsp.Config
+---@field svelte? vim.lsp.Config
+---@field svlangserver? vim.lsp.Config
+---@field svls? vim.lsp.Config
+---@field swift_mesonls? vim.lsp.Config
+---@field syntax_tree? vim.lsp.Config
+---@field systemd_ls? vim.lsp.Config
+---@field tabby_ml? vim.lsp.Config
+---@field tailwindcss? vim.lsp.Config
+---@field taplo? vim.lsp.Config
+---@field tblgen_lsp_server? vim.lsp.Config
+---@field teal_ls? vim.lsp.Config
+---@field templ? vim.lsp.Config
+---@field terraform_lsp? vim.lsp.Config
+---@field terraformls? vim.lsp.Config
+---@field texlab? vim.lsp.Config
+---@field textlsp? vim.lsp.Config
+---@field tflint? vim.lsp.Config
+---@field theme_check? vim.lsp.Config
+---@field thriftls? vim.lsp.Config
+---@field tilt_ls? vim.lsp.Config
+---@field tinymist? vim.lsp.Config
+---@field ts_ls? vim.lsp.Config
+---@field ts_query_ls? vim.lsp.Config
+---@field tsp_server? vim.lsp.Config
+---@field ttags? vim.lsp.Config
+---@field turbo_ls? vim.lsp.Config
+---@field turtle_ls? vim.lsp.Config
+---@field tvm_ffi_navigator? vim.lsp.Config
+---@field twiggy_language_server? vim.lsp.Config
+---@field typeprof? vim.lsp.Config
+---@field typos_lsp? vim.lsp.Config
+---@field typst_lsp? vim.lsp.Config
+---@field uiua? vim.lsp.Config
+---@field ungrammar_languageserver? vim.lsp.Config
+---@field unison? vim.lsp.Config
+---@field unocss? vim.lsp.Config
+---@field uvls? vim.lsp.Config
+---@field v_analyzer? vim.lsp.Config
+---@field vacuum? vim.lsp.Config
+---@field vala_ls? vim.lsp.Config
+---@field vale_ls? vim.lsp.Config
+---@field vdmj? vim.lsp.Config
+---@field vectorcode_server? vim.lsp.Config
+---@field verible? vim.lsp.Config
+---@field veridian? vim.lsp.Config
+---@field veryl_ls? vim.lsp.Config
+---@field vhdl_ls? vim.lsp.Config
+---@field vimls? vim.lsp.Config
+---@field visualforce_ls? vim.lsp.Config
+---@field vls? vim.lsp.Config
+---@field volar? vim.lsp.Config
+---@field vscoqtop? vim.lsp.Config
+---@field vtsls? vim.lsp.Config
+---@field vuels? vim.lsp.Config
+---@field wasm_language_tools? vim.lsp.Config
+---@field wgsl_analyzer? vim.lsp.Config
+---@field yamlls? vim.lsp.Config
+---@field yang_lsp? vim.lsp.Config
+---@field yls? vim.lsp.Config
+---@field ziggy? vim.lsp.Config
+---@field ziggy_schema? vim.lsp.Config
+---@field zk? vim.lsp.Config
+---@field zls? vim.lsp.Config
