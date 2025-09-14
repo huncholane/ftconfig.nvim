@@ -12,9 +12,16 @@ local augroup = vim.api.nvim_create_augroup("ftconfig", { clear = true })
 ---@field use string[]
 ---@field formatters? table<string, conform.FileFormatterConfig>
 
+---@class FTKeymapOptions
+---@field [1] string # mode
+---@field [2] string # lhs
+---@field [3] string|fun(args:vim.api.keyset.create_autocmd.callback_args) # rhs
+---@field [4]? vim.keymap.set.Opts
+
 ---@class FTSpec
 ---@field indent? integer
 ---@field conform? FTConformSpec
+---@field keymaps? FTKeymapOptions[]
 ---@field lsp? table<LSPName, any>
 
 ---Loads the config for the given filename
@@ -39,6 +46,16 @@ function M.load_file(filename)
 				vim.opt_local.softtabstop = indent
 			end,
 		})
+		for _, k in ipairs(spec.keymaps or {}) do
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = ft,
+				callback = function(args)
+					local opts = k[4] or {}
+					opts.buffer = args.buf
+					vim.keymap.set(k[1], k[2], k[3], opts)
+				end,
+			})
+		end
 		if spec.conform then
 			local conform_opts =
 				{ formatters_by_ft = { [ft] = spec.conform.use }, formatters = spec.conform.formatters }
