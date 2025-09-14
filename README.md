@@ -58,9 +58,9 @@ Then use:
 - `:Telescope ftconfig` - Browse and select filetypes to configure
 
 The picker shows:
-- 󰓎 Current buffer's filetype (prioritized)
-- 📝 Filetypes with existing configs
-- 󰙴 Other available filetypes
+- Current buffer's filetype (prioritized)
+- Filetypes with existing configs
+- Other available filetypes
 
 ## Configuration
 
