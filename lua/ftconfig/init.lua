@@ -25,23 +25,29 @@ function M.load_file(filename)
 	local mod = "ftconfig." .. ft
 	---@type FTSpec?
 	local spec = require(mod)
-	if not spec then
+	if spec == nil or type(spec) == "boolean" then
 		return
 	end
-	local indent = spec.indent or 4
-	vim.api.nvim_create_autocmd("FileType", {
-		group = augroup,
-		pattern = ft,
-		callback = function()
-			vim.opt_local.shiftwidth = indent
-			vim.opt_local.tabstop = indent
-			vim.opt_local.softtabstop = indent
-		end,
-	})
-
-	if spec.conform then
-		local conform_opts = { formatters_by_ft = { [ft] = spec.conform.use }, formatters = spec.conform.formatters }
-		require("conform").setup(conform_opts)
+	local ok, err = pcall(function()
+		local indent = spec.indent or 4
+		vim.api.nvim_create_autocmd("FileType", {
+			group = augroup,
+			pattern = ft,
+			callback = function()
+				vim.opt_local.shiftwidth = indent
+				vim.opt_local.tabstop = indent
+				vim.opt_local.softtabstop = indent
+			end,
+		})
+		if spec.conform then
+			local conform_opts =
+				{ formatters_by_ft = { [ft] = spec.conform.use }, formatters = spec.conform.formatters }
+			require("conform").setup(conform_opts)
+		end
+	end)
+	if not ok then
+		local msg = string.format("%s ftconfig error: %s", ft, err)
+		vim.notify(msg, vim.log.levels.ERROR)
 	end
 end
 
